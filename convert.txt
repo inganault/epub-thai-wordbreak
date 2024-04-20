@@ -1,0 +1,2 @@
+# https://onnxruntime.ai/docs/tutorials/tf-get-started.html
+python -m tf2onnx.convert --saved-model sertis/saved_model --output sertiscorp-thai-word-segmentation.onnx --opset 13
