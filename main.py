@@ -26,6 +26,8 @@ def break_word(chunk):
         if split:
             out.append(chunk[start:idx])
             start = idx
+    if start != lengths[0]:
+        out.append(chunk[start:])
     return out[1:]
 
 def scan_thai_chunk(text):
